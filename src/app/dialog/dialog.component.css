@@ -1,0 +1,33 @@
+.dialog-button-style {
+  width:70px;
+  height:30px;
+  cursor:pointer;
+  border: 2px solid #2522ff;
+  color: blue;
+  font-weight: bold;
+  background-color: #6679ff;
+  margin-left: 90%;
+}
+.dialog-image-style1{
+  margin-left: 10%;
+  width:150px;
+  height:90px;
+}
+.dialog-image-style2{
+  margin-left: 115px;
+  width:120px;
+  height:90px;
+}
+.dialog-hed-style {
+  background-color: #6679ff;
+  color: yellow;
+  font-style: italic;
+  font-weight: bold;
+  font-size: large;
+  border: 2px solid #2522ff;
+  text-align: center;
+}
+.main-grid-style {
+  font-weight: bold;
+  color: blue;
+}

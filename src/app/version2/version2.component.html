@@ -1,0 +1,27 @@
+<div>
+  <input placeholder="Search by name" class="input-style" (keyup)="applyFilter($event.target.value)">
+  <img matTooltip="Pika pika! Pikachu!" class="pikachu-image-style" src="https://secure.img2-fg.wfcdn.com/im/02238154/compr-r85/8470/84707680/pokemon-pikachu-wall-decal.jpg" alt="Pokemon image">
+  <button matTooltip="Go to pokemon homepage" routerLink="/home" class="home-button-style"></button>
+  <router-outlet></router-outlet>
+</div>
+
+<div class="mat-elevation-z10">
+  <table mat-table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef class="table-header-style"> Name </th>
+      <td mat-cell *matCellDef="let element" class="table-cell-style"> {{element.name | titlecase}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="details">
+      <th mat-header-cell *matHeaderCellDef class="table-header-style"> Details </th>
+      <td mat-cell *matCellDef="let row" class="table-cell-style">
+        <button matTooltip="Click on pokedex for more details about selected pokemon" (click)="pokemonDetails(row.name)" class="details-button-style"></button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <mat-paginator class="paginator-style" [pageSizeOptions] = "pageSizeOptions" (page) = "pageChanged($event)" [length]="pokemonSize"></mat-paginator>
+</div>

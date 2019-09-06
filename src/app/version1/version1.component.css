@@ -1,0 +1,58 @@
+table {
+  width: 100%;
+}
+
+.input-style {
+  margin-left: 100px;
+  margin-bottom: 70px;
+  background-color: lightblue;
+  border-color: #4255ff;
+  text-align: center;
+  height: 30px;
+}
+
+.search-button-style {
+  margin-left: 100px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width:100px;
+  height:100px;
+  cursor:pointer;
+  border:none;
+  background:
+    transparent
+    center
+    url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAALVBMVEX///8AAADxVFvwSlPuOUPf39/JycntJzHT09Po6OjsFyLeEh3v7+9/f3/Dw8MK5/96AAACIElEQVR4nO3b20pDMRBGYVsP9dj3f1zdF4HhZyaJtskkstaVaJs9X2GICD48EBEREREREREREREREREN7tQoe77ugKzW1hA76LnR0iggq7U9JBr+MShCZTuAABmFqA3+JNVQqRggQCYhdPBaHigFAwTIZMSlIw+UggECJAnxXskDpWCAAElEfAR5oBQMECBJiAgQgWoYIEB2hdyK6MEMXXggQAZAdNG9S/CWLGboxQgEyGCIXXRFXP6QYoZfjECATIDYRfeWtbfog9CLEQiQ1SHeZegtrh2glWK8s+5+KQIBMhiiQ3iV15wr9ZyjZwEBshMkWl5FnJwiTO1sIEB2gbSWVxGts7yBo4AAWR0SZYfyHvplqmHse6OAANkRYofyEM+mCNODAAJkdchLUPRAi7j+pJho2NpzgADZAfIqtSBXUw2i55aAANkBYjHH4c9OEaRn2b3zjgrkbgggQCZBCubNyT609Uuj9/6jggACZEeILvzx4E9JMd4fH/Q9FmEXHQiQXSAWEy18Gaq8NjqjfF1DDFl0IEAmQbxfHhVTll77DQIIkN0gFvNqUowuvq11CU5BAAEy4X/a7dL3LL4HSEUAAZKAiRbfy8LTEECATMREi29R+n37AaQhgACZgIkW30Ppz+0HkYYAAmQS6EXSob3hC2AJxBEQIAM7mXTYaPilACUgq/VvILZTo+z5ugOyWv8GQkRERERERERERESpfQN/fQ9A7rTbigAAAABJRU5ErkJggg==') no-repeat;
+  background-size: cover;
+}
+.home-button-style {
+  margin-left: 20%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+  border: none;
+  background: transparent center url('https://www.mercurynews.com/wp-content/uploads/2019/05/Pok%C3%A9mon-HOME-Logo.png?w=462') no-repeat;
+  background-size: cover;
+}
+.table-header-style{
+  background-color: #99ccff;
+  font-style: italic;
+  font-weight: bold;
+  font-size: large;
+  border: 2px solid #5b7fff;
+  text-align: center;
+}
+
+.table-cell-style{
+  font-weight: bold;
+  border: 1px solid lavender;
+  text-align: center;
+}
+.error-msg-style {
+  font-weight: bold;
+  color: red;
+  font-style: italic;
+  margin-left: 20%;
+}

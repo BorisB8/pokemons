@@ -1,0 +1,47 @@
+<div>
+  <label>
+    <input (keydown.enter)="onFilter()" matTooltip="Enter a FULL name of pokemon you want to catch" placeholder="Name" [(ngModel)]="name" class="input-style">
+  </label>
+  <label>
+    <input (keydown.enter)="onFilter()" matTooltip="Enter a FULL type of pokemons you want to catch" placeholder="Type" [(ngModel)]="type" class="input-style">
+  </label>
+  <button matTooltip="Click on pokeball to 'catch' a pokemon" (click)="onFilter()" (click)= "this.openInfoMsg('Possible search is only with with name or only with type of pokemons', '');" class="search-button-style"></button>
+  <button matTooltip="Go to pokemon homepage" routerLink="/home" class="home-button-style"></button>
+  <router-outlet></router-outlet>
+</div>
+
+<div class="mat-elevation-z10">
+  <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef class="table-header-style"> Name </th>
+      <td mat-cell *matCellDef="let element" class="table-cell-style"> {{element.name | titlecase}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="allTypes">
+      <th mat-header-cell *matHeaderCellDef class="table-header-style"> Type </th>
+      <td mat-cell *matCellDef="let element" class="table-cell-style"> {{element.allTypes}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="hewe">
+      <th mat-header-cell *matHeaderCellDef class="table-header-style"> Height / Weight </th>
+      <td mat-cell *matCellDef="let element" class="table-cell-style"> {{element.hewe}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="ability">
+      <th mat-header-cell *matHeaderCellDef class="table-header-style"> Signature ability </th>
+      <td mat-cell *matCellDef="let element" class="table-cell-style"> {{element.ability}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="exp">
+      <th mat-header-cell *matHeaderCellDef class="table-header-style"> Base experience </th>
+      <td mat-cell *matCellDef="let element" class="table-cell-style"> {{element.exp}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <div *ngIf="ELEMENT_DATA.length == 0">
+    <span class="error-msg-style">Pokemon with requested type or name is not valid or dont exist. Please enter valid pokemon type or name.</span>
+  </div>
+  <mat-paginator [pageSizeOptions] = "pageSizeOptions" (page) = "pageChanged($event)" [length]="pokemonSize"></mat-paginator>
+</div>

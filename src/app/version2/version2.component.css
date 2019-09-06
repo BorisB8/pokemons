@@ -1,0 +1,56 @@
+table {
+  width: 50%;
+}
+.details-button-style {
+  width:50px;
+  height:35px;
+  cursor:pointer;
+  border:none;
+  background:
+    transparent
+    center
+    url('https://img.rankedboost.com/wp-content/uploads/2016/07/Pokemon-Go-Pok%C3%A9dex.png') no-repeat;
+  background-size: cover;
+}
+.table-cell-style{
+  font-weight: bold;
+  border: 1px solid lavender;
+  text-align: center;
+}
+.table-header-style{
+  background-color: #99ccff;
+  font-style: italic;
+  font-weight: bold;
+  font-size: large;
+  border: 2px solid #5b7fff;
+  text-align: center;
+}
+.input-style {
+  margin-top: 70px;
+  margin-left: 100px;
+  margin-bottom: 5%;
+  background-color: lightblue;
+  border-color: #4255ff;
+  text-align: center;
+  height: 30px;
+}
+.paginator-style {
+  margin-right: 50%;
+}
+.pikachu-image-style {
+  width:15%;
+  height:15%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.home-button-style {
+  margin-left: 10%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+  border: none;
+  background: transparent center url('https://www.mercurynews.com/wp-content/uploads/2019/05/Pok%C3%A9mon-HOME-Logo.png?w=462') no-repeat;
+  background-size: cover;
+}
